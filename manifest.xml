@@ -1,0 +1,16 @@
+<package>
+  <description brief="rosspawn_gui">
+    GUI application for rosspawn, based on Fawkes' Plugin GUI.
+  </description>
+  <author>Tim Niemueller</author>
+  <license>GPLv2+</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rosspawn_gui</url>
+  <depend package="roscpp"/>
+  <depend package="roslib"/>
+  <depend package="rosspawn"/>
+  <rosdep name="gtkmm24" />
+  <rosdep name="gconfmm26" />
+  <rosdep name="glademm24" />
+  <rosdep name="glibmm24" />
+</package>
