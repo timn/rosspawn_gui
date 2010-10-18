@@ -1,0 +1,30 @@
+
+rosspawn_gui: GUI to instruct rosspawn
+======================================
+
+This ROS package provides a GUI application to instruct and monitor rosspawn.
+It allows to start and stop nodes by the click of a button, and will
+automatically update if the state of a node changes, e.g. if someone else
+starts or stops a node.
+
+This GUI is based on Fawkes' plugin GUI. See the rosspawn documentation of
+some assumptions made and the limits of the current version. This is a proof
+of concept implementation and probably not useful in its current state.
+Comments and patches welcome.
+
+Requirements
+------------
+The following software packages are needed on your system in order to
+use actionlib_lua. Requirements marked with (*) have specific information
+further down below.
+
+- ROS 1.1			http://www.ros.org
+- rosspawn			http://github.com/timn/rosspawn
+
+Usage
+-----
+Run bin/rosspawn. Then run rosspawn_gui and click on any node name to get it
+started or stopped. Usually no modifications are necessary to the nodes.
+Nodes which are started without using rosspawn are currently not recognized.
+On initial startup rosspawn_gui gets the list of available nodes. The list
+is not currently updated at run-time.
